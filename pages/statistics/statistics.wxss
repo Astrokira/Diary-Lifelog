@@ -1,0 +1,107 @@
+/* pages/statistics/statistics.wxss */
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.main-container {
+    font-size: 35rpx;
+    line-height: 4em;
+    padding: 35rpx;
+}
+.title{
+    font-size: 36rpx;
+    text-align: left;
+    font-family: '华文中宋', sans-serif; /* 修改字体 */
+    font-weight: bold;
+}
+.scrollarea {
+    flex: 1;
+    overflow-y: hidden;
+}
+
+/*图表容器*/ 
+.chart-container {
+    width: 100%;
+    height: 400rpx; /* 根据需要调整图表高度 */
+    margin-top: 20rpx;
+    background-color: #fff; /* 设置背景色，确保图表清晰可见 */
+    border-radius: 10rpx; /* 圆角效果 */
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1); /* 给容器加个阴影 */
+}
+
+
+/* statistics.wxss */
+.statistics-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-scroll {
+  display: flex;
+  width: 100%; /* 宽度限制为屏幕宽度 */
+  overflow-x: scroll; /* 允许横向滚动 */
+  white-space: nowrap; /* 防止内容换行 */
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+}
+
+.table-cell {
+  display: inline-block;
+  width: 200rpx; /* 每个单元格的宽度 */
+  margin: 0 10rpx; /* 单元格间距 */
+  text-align: center; /* 内容居中 */
+  border: 2rpx solid #ddd; /* 添加表格样式 */
+  border-radius: 15rpx; /* 圆角 */
+  padding: 20rpx;
+  background-color: #f9f9f9; /* 背景颜色 */
+  opacity: 0.7;
+}
+
+.cell-date {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+}
+
+.cell-count {
+  font-size: 16px;
+  color: #5a9424; /* 和统计图表颜色一致 */
+  font-weight: bold;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+}
+
+.summary-container {
+  width: 87%;
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  padding: 20rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 15rpx;
+  background-color: #f9f9f9;
+  opacity: 0.7;
+}
+
+.summary-item {
+  margin-top: -20rpx;
+  font-size: 34rpx;
+  color: #333;
+  margin-bottom: -20rpx;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+}

@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<image class="background" src="/images/background.jpg"></image> <!-- 背景图片 -->
+
+<navigation-bar title="日记·纪日" back="{{false}}" color="#000" background="#fff"></navigation-bar>
+
+<view class="main-container">
+  <view class="title">日记·纪日</view>
+  <view class="title2">今天，我想写...</view>
+  <input class="input" placeholder="用户名" bindinput="handlename"/>
+  <input class="input" type="password" placeholder="密码" bindinput="handlepwd"/>
+  <button class="btn" bindtap="handleLogin">登录</button>
+  <button class="btn2" bindtap="showRegisterModal">未注册？去注册</button>
+</view>
+
+<!-- 下面是注册弹窗设计（模态框）-->
+<view wx:if="{{isRegisterModalVisible}}" class="custom-modal">
+  <!-- 注册模态框 -->
+  <modal
+    title="注册"
+    show="{{isRegisterModalVisible}}"
+    bindcancel="hideRegisterModal"
+    bindconfirm="submitRegistration"
+    confirm-text="提交"
+    cancel-text="取消"
+  >
+    <view class="modal-content">
+      <input class="input2" placeholder="请输入用户名" bindinput="handleUsernameInput" />
+      <input class="input2" placeholder="请输入密码" bindinput="handlePasswordInput" password="true" />
+    </view>
+  </modal>
+</view>

@@ -1,0 +1,111 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.image-container {
+  display: flex;             /* 使用 flexbox 布局 */
+  justify-content: center;   /* 水平居中 */
+  align-items: center;       /* 垂直居中 */
+  width: 100%;               /* 容器宽度 */
+  margin-top: 200rpx;        /* 调整容器的位置 */
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.input {
+  margin-top: 40rpx;
+  padding: 10rpx;
+  width: 80%;
+  margin-left: 40rpx;
+  height: 50rpx;
+  border-bottom: 1px solid gainsboro;
+}
+
+.scrollarea {
+flex: 1;
+overflow-y: hidden;
+}
+.title{
+  font-size: 70rpx;
+  margin-top: 100rpx;
+  text-align: left;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+  margin-bottom: 0rpx;
+  /*font-family: 'simhei.ttf'*/
+}
+.title2{
+  font-size: 40rpx;
+  margin-top: 0rpx;
+  text-align: left;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+  margin-bottom: 100rpx;
+  /*font-family: 'simhei.ttf'*/
+}
+.main-container {
+  font-size: 35rpx;
+  line-height: 4em;
+  padding: 60rpx;
+}
+
+.btn {
+  margin-top: 150rpx;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+  background-color: #ffffff; 
+  color: rgb(54, 54, 54); /* 文字颜色 */
+  border: none;
+  border-radius: 15rpx;
+  font-size: 40rpx;
+  padding: 20rpx 50rpx; /* 上下左右内边距 */
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.1); /* 按钮阴影 */
+  transition: all 0.2s ease; /* 添加过渡效果 */
+}
+
+.btn:active {
+  background-color: #9e9d9d; /* 按钮点击时变为灰色的 */
+  box-shadow: none; /* 去阴影 */
+}
+
+.btn2 {
+  margin-top: 50rpx;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+  background-color: #ffffff; 
+  color: rgb(54, 54, 54); /* 文字颜色 */
+  border: none;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  padding: 20rpx 50rpx; /* 上下左右内边距 */
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.1); /* 按钮阴影 */
+  transition: all 0.2s ease; /* 添加过渡效果 */
+}
+
+.btn2:active {
+  background-color: #9e9d9d; /* 按钮点击时变为灰色的 */
+  box-shadow: none; /* 去阴影 */
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input2 {
+  padding: 16rpx;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 10rpx;
+  height: 50rpx;
+}

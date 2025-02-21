@@ -1,0 +1,75 @@
+/* pages/newdiary/newdiary.wxss */
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.main-container {
+    font-size: 35rpx;
+    line-height: 4em;
+    padding: 60rpx;
+}
+.scrollarea {
+    flex: 1;
+    overflow-y: hidden;
+}
+.nameinfo{
+  margin-top: 0rpx;
+  margin-bottom: 0rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 30rpx;
+  font-family: '华文中宋', sans-serif; /* 修改字体 */
+}
+
+.input-title {
+    border: 2rpx solid #ccc; /* 设置输入框的边框 */
+    border-radius: 8rpx; /* 给输入框圆角 */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10rpx;
+    line-height: 1.5em;
+    width: 93%;
+    height: 50rpx;
+}
+.input-content {
+    margin-top: 50rpx;
+    border: 2rpx solid #ccc; 
+    border-radius: 8rpx; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10rpx;
+    line-height: 1.5em;
+    width: 93%;
+    height: 1000rpx;
+}
+
+.btn {
+    margin-top: 60rpx;
+    font-family: '华文中宋', sans-serif; /* 修改字体 */
+    background-color: #ffffff; 
+    color: rgb(54, 54, 54); /* 文字颜色 */
+    border: none;
+    border-radius: 15rpx;
+    font-size: 30rpx;
+    padding: 10rpx 30rpx; /* 上下左右内边距 */
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.1); /* 按钮阴影 */
+    transition: all 0.2s ease; /* 添加过渡效果 */
+}
+.btn:active {
+    background-color: #9e9d9d; /* 按钮点击时变为灰色的 */
+    box-shadow: none; /* 去阴影 */
+}

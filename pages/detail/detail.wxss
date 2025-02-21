@@ -1,0 +1,112 @@
+/* pages/detail/detail.wxss */
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.main-container {
+    font-size: 35rpx;
+    line-height: 4em;
+    padding: 35rpx;
+}
+.title{
+    font-size: 50rpx;
+    text-align: left;
+    font-family: '华文中宋', sans-serif; /* 修改字体 */
+}
+.scrollarea {
+    flex: 1;
+    overflow-y: hidden;
+}
+
+.info{
+    margin-top: 10rpx;
+    width: 90%;
+    margin-left: 30rpx;
+}
+
+.nameinfo{
+    margin-top: 0rpx;
+    margin-bottom: 0rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 30rpx;
+    font-family: '华文中宋', sans-serif; /* 修改字体 */
+}
+
+.input-title {
+    margin-top: 20rpx;
+    margin-left: 30rpx;
+    border: 2rpx solid #ccc; 
+    border-radius: 8rpx; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10rpx;
+    line-height: 1.5em;
+    width: 85%;
+    height: 50rpx;
+}
+.input-content {
+    margin-top: 0rpx;
+    margin-left: 30rpx;
+    border: 2rpx solid #ccc; 
+    border-radius: 8rpx;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10rpx;
+    line-height: 1.5em;
+    width: 85%;
+    height: 900rpx;
+}
+
+.save-btn, .delete-btn {
+    margin-top: 40rpx;
+    margin-left: 30rpx;
+    background-color: #ffffff; 
+    color: rgb(255, 255, 255); /* 文字颜色 */
+    border: none;
+    border-radius: 15rpx;
+    font-size: 30rpx;
+    padding: 10rpx 20rpx; /* 上下左右内边距 */
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.1); /* 按钮阴影 */
+    transition: all 0.2s ease; /* 添加过渡效果 */
+}
+.save-btn:active {
+    background-color: #9e9d9d; /* 按钮点击时变为灰色的 */
+    box-shadow: none; /* 去阴影 */
+}
+
+.delete-btn:active {
+  background-color: #9e9d9d; /* 按钮点击时变为灰色的 */
+  box-shadow: none; /* 去阴影 */
+}
+
+.actions {
+    width: 91%;
+    margin-left: 30rpx;
+    display: flex;
+    justify-content: space-between; /* 左右对齐按钮 */
+    margin-top: 20rpx;
+    gap: 55rpx;  /* 设置按钮间距 */
+}
+
+.save-btn {
+    background-color: #166919; /* 保存按钮颜色 */
+}
+  
+.delete-btn {
+    background-color: #b34330; /* 删除按钮颜色 */
+}

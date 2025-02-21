@@ -1,0 +1,15 @@
+<!--user.wxml-->
+<image class="background" src="/images/background.jpg"></image> <!-- 背景图片 -->
+
+<navigation-bar title="我的日记本" back="{{false}}" color="#000" background="#fff"></navigation-bar>
+<view class="image-container">
+    <!--头像显示-->
+    <image class="avatar" src="/images/avatar.jpg" mode="aspectFill"></image>
+</view>
+<view class="main-container">
+  <view class="title">欢迎，{{username}}</view>
+  <button class="btn" bindtap="writeDiary">写新日记</button>
+  <button class="btn" bindtap="dairyHistory">日记历史</button>
+  <button class="btn" bindtap="dairyStatistics">日记统计</button>
+  <button class="btn2" bindtap="logout">退出登录</button>
+</view>

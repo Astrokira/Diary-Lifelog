@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<image class="background" src="/images/background2.jpg"></image> <!-- 背景图片 -->
+
+<navigation-bar title="查看日记" back="{{true}}" color="#000" background="#fff"></navigation-bar>
+
+<view class="main-container">
+  <!-- 标题输入框，默认显示预填内容 -->
+  <input class="input-title" maxlength="50" value="{{diary.title}}" bindinput="onTitleChange" />
+
+  <!-- 显示用户名和日期 -->
+  <text class="nameinfo">🐱 {{diary.username}} @ {{diary.date}}</text>
+
+  <!-- 内容输入框，也是默认显示预填内容 -->
+  <textarea class="input-content" maxlength="1500" value="{{diary.content}}" bindinput="onContentChange"></textarea>
+
+  <!-- 按钮操作区 -->
+  <view class="actions">
+    <button class="save-btn" bindtap="saveDiary">保存</button>
+    <button class="delete-btn" bindtap="deleteDiary">删除</button>
+  </view>
+</view>

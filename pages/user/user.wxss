@@ -1,0 +1,80 @@
+/**user.wxss**/
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.image-container {
+    display: flex;             /* 使用 flexbox 布局 */
+    justify-content: center;   /* 水平居中 */
+    align-items: center;       /* 垂直居中 */
+    width: 100%;               /* 容器宽度 */
+    margin-top: 200rpx;        /* 调整容器的位置 */
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.avatar {
+    width: 200rpx; /* 设置图片宽度 */
+    height: 200rpx; /* 设置图片高度，和宽度相等 */
+    border-radius: 50%; /* 圆形头像效果 */
+    border: 5rpx solid rgb(180, 180, 180);
+    object-fit: cover; /* 确保内容居中填充，不拉伸 */
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+.title{
+    font-size: 2rem;
+    margin-top: 0rpx;
+    text-align: center;
+    font-family: '华文中宋', sans-serif; /* 修改字体 */
+    /*font-family: 'simhei.ttf'*/
+}
+.main-container {
+    font-size: 35rpx;
+    line-height: 4em;
+    padding: 60rpx;
+}
+
+.btn {
+    margin-top: 90rpx;
+    font-family: '华文中宋', sans-serif;
+    background-color: #ffffff; 
+    color: rgb(54, 54, 54); /* 文字颜色 */
+    border: none;
+    border-radius: 15rpx;
+    font-size: 40rpx;
+    padding: 20rpx 50rpx; /* 上下左右内边距 */
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.1); /* 按钮阴影 */
+    transition: all 0.2s ease; /* 添加过渡效果 */
+}
+
+.btn:active {
+    background-color: #9e9d9d; /* 按钮点击时变为灰色！ */
+    box-shadow: none; /* 去阴影 */
+}
+
+.btn2 {
+    position: fixed; /* 固定位置 */
+    bottom: 30rpx;   /* 距离底部 */
+    left: 50%;
+    transform: translateX(-50%); /* 调整按钮使其完全居中 */
+    font-size: 28rpx; /* 按钮文字大小 */
+    padding: 10rpx 10rpx; /* 内边距 */
+    background-color: #b62124; /* 红色背景 */
+    color: white;    
+    border: none;   
+    border-radius: 20rpx; 
+    box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.2); 
+}

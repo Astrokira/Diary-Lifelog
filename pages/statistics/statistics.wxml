@@ -1,0 +1,38 @@
+<!--pages/statistics/statistics.wxml-->
+<image class="background" src="/images/background2.jpg"></image> <!-- 背景图片 -->
+
+<navigation-bar title="日记统计" back="{{true}}" color="#000" background="#fff"></navigation-bar>
+
+<view class="main-container">
+    <view class="title">你近七天的字数活跃度💚</view>
+
+    <view class="statistics-container">
+      <!-- 横向滚动 -->
+      <scroll-view class="horizontal-scroll" scroll-x>
+        <view class="table-row">
+          <!-- 遍历日期和字数 -->
+          <view class="table-cell" wx:for="{{statistics}}" wx:key="index">
+            <view class="cell-date">{{item.date}}</view>
+            <view class="cell-count">{{item.wordCount}} 字</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    
+    <view class="title">你的日记资料卡💚</view>
+
+    <view class="summary-container">
+      <view class="summary-item">总字数：{{totalWordCount}} 字</view>
+      <view class="summary-item">平均字数：{{averageWordCount}} 字</view>
+      <view class="summary-item">最多字数：{{maxWordCount}} 字</view>
+      <view class="summary-item">最少字数：{{minWordCount}} 字</view>
+      <view class="summary-item">日记总篇数：{{totalEntries}} 篇</view>
+    </view>
+
+    <!-- 图表容器 
+    <view class="chart-container">
+      <canvas canvas-id="barChart" style="width: 400rpx; height: 300rpx;"></canvas>
+    </view>-->
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/newdiary/newdiary.wxml-->
+<image class="background" src="/images/background.jpg"></image> <!-- 背景图片 -->
+
+<navigation-bar title="今日" back="{{true}}" color="#000" background="#fff"></navigation-bar>
+
+<view class="main-container">
+    <view class="input-title-container">
+        <input class="input-title" placeholder="请输入标题"  bindinput="handletitle" maxlength="50" value="{{title}}"></input>
+    </view>
+
+    <view class="input-content-container">
+        <textarea class="input-content" placeholder="今天，我想写..."  bindinput="handlecontent" maxlength="1500" value="{{content}}"></textarea>
+    </view>
+
+    <button class="btn" bindtap="submitDiary">提交</button>
+</view>
+ 

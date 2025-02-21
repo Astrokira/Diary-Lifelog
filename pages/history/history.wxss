@@ -1,0 +1,86 @@
+/* pages/history/history.wxss */
+page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.main-container {
+    font-size: 35rpx;
+    line-height: 4em;
+    padding: 35rpx;
+}
+.title{
+    font-size: 50rpx;
+    text-align: left;
+    font-family: '华文中宋', sans-serif; /* 修改字体 */
+}
+.scrollarea {
+    flex: 1;
+    overflow-y: hidden;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 50rpx;
+    margin: 30rpx;
+    margin-top: 0rpx;
+    border-left: 4rpx solid rgb(49, 49, 49);
+}
+  
+.timeline-item {
+    position: relative;
+    margin-bottom: 40rpx;
+}
+
+/*时间线点点*/
+.timeline-dot {
+    position: absolute;
+    left: -68rpx;
+    top: 30rpx;
+    width: 24rpx;
+    height: 24rpx;
+    background-color: #598f27;
+    border-radius: 50%;
+    border: 4rpx solid #fff;
+    box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.1);
+}
+
+/*时间线日期*/
+.timeline-date {
+    font-weight: bold;
+    font-size: 25rpx;
+    color: #666;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    margin-left: 15rpx;
+    font-family: '华文中宋', sans-serif;
+}
+
+/*时间线内容*/
+.timeline-entry {
+    margin-left: 15rpx;
+    background-color: #f9f9f9;
+    border-radius: 10rpx;
+    padding: 10rpx;
+    margin-top: 15rpx;
+    box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+  
+/*日记标题*/
+.entry-title {
+    font-size: 30rpx;
+    color: #333;
+    cursor: pointer;
+    font-family: '华文中宋', sans-serif;
+}
+  

@@ -1,0 +1,27 @@
+<image class="background" src="/images/background.jpg"></image> <!-- 背景图片 -->
+
+<navigation-bar title="历史日记" back="{{true}}" color="#000" background="#fff"></navigation-bar>
+
+<view class="main-container">
+    <view class="title">历史时间轴</view>
+</view>
+
+<scroll-view scroll-y="true" bindscrolltolower="onReachBottom" style="height: 100vh; overflow: auto;">
+    <view class="timeline-container">
+        <!-- 遍历 groupedDiaries，显示每个日期的时间轴内容 -->
+        <view wx:for="{{groupedDiaries}}" wx:for-item="diaryGroup" wx:for-index="date" wx:key="date" class="timeline-item">
+            <!-- 时间轴圆点 -->
+            <view class="timeline-dot"></view>
+            <!-- 日期 -->
+            <view class="timeline-date">{{date}}</view>
+            <!-- 日记标题列表 -->
+            <view class="timeline-entries">
+                <view wx:for="{{diaryGroup}}" wx:key="id" class="timeline-entry">
+                    <text class="entry-title" bindtap="viewDiary" data-id="{{item._id}}">{{item.title}}</text>
+                </view>
+            </view>
+        </view>
+        <view wx:if="{{noMoreData}}" class="no-more">没有更多日记了~</view>
+        <view class="title"></view>
+    </view>
+</scroll-view>
