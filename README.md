@@ -67,7 +67,3 @@ pages/
 
 4. Run the app using the **WeChat Mini Program environment**.
 
-## Future Improvements
-- Enhanced text analysis for deeper insights into writing behavior.
-- Integration with other cloud storage services.
-- Adding support for exporting entries to various formats (e.g., PDF, Word).
